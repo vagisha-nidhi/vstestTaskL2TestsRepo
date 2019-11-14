@@ -41,4 +41,4 @@ jobs:
       batchingBasedOnAgentsOption: 'customBatchSize'
       runSettingsFile: 'sample.runsettings'
       failOnMinTestsNotRun: 'true'
-      minimumExpectedTests: '5'
+      minimumExpectedTests: '6'
