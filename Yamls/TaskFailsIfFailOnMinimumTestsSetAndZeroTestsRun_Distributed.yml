@@ -19,7 +19,7 @@ jobs:
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
-      testAssemblyVer2: '**/*MsTestWithZeroTestProject*.dll'
-      searchFolder: '$(System.DefaultWorkingDirectory)\MsTestWithZeroTestProject\bin\Debug\netcoreapp3.0'
+      testAssemblyVer2: '**/*MsTestWithZeroTestsProject*.dll'
+      searchFolder: '$(System.DefaultWorkingDirectory)\MsTestWithZeroTestsProject\bin\Debug\netcoreapp3.0'
       batchingBasedOnAgentsOption: 'customBatchSize'
       failOnMinTestsNotRun: 'true'
