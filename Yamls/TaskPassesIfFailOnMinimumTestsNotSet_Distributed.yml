@@ -20,5 +20,5 @@ jobs:
     inputs:
       testSelector: 'testAssemblies'
       testAssemblyVer2: '**/*MsTestWithZeroTestsProject*.dll'
-      searchFolder: '$(System.DefaultWorkingDirectory)\MsTestWithZeroTestsProject\bin\Debug\netcoreapp3.0'
+      searchFolder: '$(System.DefaultWorkingDirectory)\MsTestWithZeroTestsProject\bin\Debug\net472'
       batchingBasedOnAgentsOption: 'customBatchSize'
