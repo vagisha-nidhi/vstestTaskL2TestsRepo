@@ -22,3 +22,4 @@ jobs:
       testAssemblyVer2: '**/*MsTestWithZeroTestsProject*.dll'
       searchFolder: '$(System.DefaultWorkingDirectory)\MsTestWithZeroTestsProject\bin\Debug\net472'
       batchingBasedOnAgentsOption: 'customBatchSize'
+      vsTestVersion: 'toolsInstaller'

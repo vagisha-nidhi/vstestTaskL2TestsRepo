@@ -23,4 +23,5 @@ jobs:
       searchFolder: '$(System.DefaultWorkingDirectory)\MsTestUnitTestProject\bin\Debug\net472'
       batchingBasedOnAgentsOption: 'customBatchSize'
       failOnMinTestsNotRun: 'true'
-      minimumExpectedTests: '5' 
+      minimumExpectedTests: '5'
+      vsTestVersion: 'toolsInstaller'

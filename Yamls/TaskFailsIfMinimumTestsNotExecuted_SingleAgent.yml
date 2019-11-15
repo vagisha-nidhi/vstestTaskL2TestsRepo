@@ -22,4 +22,5 @@ jobs:
       testAssemblyVer2: '**/*MsTestUnitTestProject*.dll'
       searchFolder: '$(System.DefaultWorkingDirectory)\MsTestUnitTestProject\bin\Debug\net472'
       failOnMinTestsNotRun: 'true'
-      minimumExpectedTests: '6' 
+      minimumExpectedTests: '6'
+      vsTestVersion: 'toolsInstaller'

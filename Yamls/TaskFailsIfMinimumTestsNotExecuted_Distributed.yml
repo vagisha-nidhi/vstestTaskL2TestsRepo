@@ -24,3 +24,4 @@ jobs:
       batchingBasedOnAgentsOption: 'customBatchSize'
       failOnMinTestsNotRun: 'true'
       minimumExpectedTests: '6' 
+      vsTestVersion: 'toolsInstaller'

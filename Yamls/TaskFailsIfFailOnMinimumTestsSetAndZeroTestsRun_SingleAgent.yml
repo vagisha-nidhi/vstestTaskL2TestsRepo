@@ -22,3 +22,4 @@ jobs:
       testAssemblyVer2: '**/*MsTestWithZeroTestProject*.dll'
       searchFolder: '$(System.DefaultWorkingDirectory)\MsTestWithZeroTestProject\bin\Debug\net472'
       failOnMinTestsNotRun: 'true'
+      vsTestVersion: 'toolsInstaller'
