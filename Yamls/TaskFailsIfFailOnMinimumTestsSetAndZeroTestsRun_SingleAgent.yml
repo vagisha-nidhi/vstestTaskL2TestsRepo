@@ -20,5 +20,5 @@ jobs:
     inputs:
       testSelector: 'testAssemblies'
       testAssemblyVer2: '**/*MsTestWithZeroTestProject*.dll'
-      searchFolder: '$(System.DefaultWorkingDirectory)\MsTestWithZeroTestProject\bin\Debug\netcoreapp3.0'
+      searchFolder: '$(System.DefaultWorkingDirectory)\MsTestWithZeroTestProject\bin\Debug\net472'
       failOnMinTestsNotRun: 'true'

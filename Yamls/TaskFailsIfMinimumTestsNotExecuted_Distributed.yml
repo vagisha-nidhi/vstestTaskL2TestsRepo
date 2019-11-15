@@ -20,7 +20,7 @@ jobs:
     inputs:
       testSelector: 'testAssemblies'
       testAssemblyVer2: '**/*MsTestUnitTestProject*.dll'
-      searchFolder: '$(System.DefaultWorkingDirectory)\MsTestUnitTestProject\bin\Debug\netcoreapp3.0'
+      searchFolder: '$(System.DefaultWorkingDirectory)\MsTestUnitTestProject\bin\Debug\net472'
       batchingBasedOnAgentsOption: 'customBatchSize'
       failOnMinTestsNotRun: 'true'
       minimumExpectedTests: '6' 
