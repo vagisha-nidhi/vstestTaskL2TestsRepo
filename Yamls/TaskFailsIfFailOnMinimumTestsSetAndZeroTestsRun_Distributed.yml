@@ -10,8 +10,7 @@ trigger:
 jobs:
 - job: RunTest1
   displayName: 'Run Tests'
-  pool:
-    vmImage: 'windows-latest'
+  pool: Default
   strategy:
     parallel: 2
   steps:
