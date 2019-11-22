@@ -39,5 +39,12 @@ namespace MsTestUnitTestProject
         {
             Assert.AreEqual(1, 1);
         }
+
+        [TestMethod]
+        [Priority(0)]
+        public void TestMethod6()
+        {
+            Assert.Inconclusive();
+        }
     }
 }
