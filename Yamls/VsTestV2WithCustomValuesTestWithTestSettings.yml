@@ -22,7 +22,7 @@ jobs:
     inputs:
       testSelector: 'testAssemblies'
       testAssemblyVer2: '**/*UnitTestProject*.dll'
-      searchFolder: '$(System.DefaultWorkingDirectory)\UnitTestProject1\bin\Debug\net472'
+      searchFolder: '$(System.DefaultWorkingDirectory)\UnitTestProject1\bin\Debug\'
       vsTestVersion: 'toolsInstaller'
       testFiltercriteria: 'Priority = 3 | FullyQualifiedName ~ TestRunParameter | FullyQualifiedName = NUnit.Tests1.TestClass.TestMethod'
       runSettingsFile: '$(System.DefaultWorkingDirectory)\UnitTestProject1\SampleTestsettings1.testsettings'
