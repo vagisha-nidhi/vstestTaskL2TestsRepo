@@ -21,8 +21,16 @@ jobs:
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
-      testAssemblyVer2: '**/*MsTestUnitTestProject*.dll'
-      searchFolder: '$(System.DefaultWorkingDirectory)\MsTestUnitTestProject\bin\Debug\net472'
-      failOnMinTestsNotRun: 'true'
-      minimumExpectedTests: '5'
+      testAssemblyVer2: '**/*UnitTestProject*.dll'
+      searchFolder: '$(System.DefaultWorkingDirectory)\UnitTestProject1\bin\Debug\net472'
       vsTestVersion: 'toolsInstaller'
+      testFiltercriteria: 'Priority = 3 | FullyQualifiedName ~ TestRunParameter | FullyQualifiedName = NUnit.Tests1.TestClass.TestMethod'
+      runSettingsFile: '$(System.DefaultWorkingDirectory)\UnitTestProject1\SampleTestsettings1.testsettings'
+      overrideTestrunParameters: '-connectionString DataSource=tcp:ServerName.database.windows.net,1433;InitialCatalog=DatabaseName -param1 OverrideParam1Value'
+      runInParallel: "true"
+      codeCoverageEnabled: "true"
+      testRunTitle: "VsTestV2WithCustomValuesTestWithTestSettings"
+      platform: "Custom platform value"
+      configuration: "Custom configuration value"
+      publishRunAttachments: "true"
+      pathtoCustomTestAdapters: "$(Build.SourcesDirectory)"
