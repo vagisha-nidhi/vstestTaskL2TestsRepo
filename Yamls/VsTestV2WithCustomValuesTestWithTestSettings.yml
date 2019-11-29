@@ -18,7 +18,7 @@ jobs:
   - task: VisualStudioTestPlatformInstaller@1
     displayName: 'Visual Studio Test Platform Installer'
     inputs:
-      versionSelector: 'latestPreRelease'
+      versionSelector: '15.7.0'
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
