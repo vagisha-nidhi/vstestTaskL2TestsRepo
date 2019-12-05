@@ -11,8 +11,6 @@ jobs:
 - job: RunTest1
   displayName: 'Run Tests'
   pool: Default
-  strategy:
-    parallel: 2
   steps:
   - task: VisualStudioTestPlatformInstaller@1
     displayName: 'Visual Studio Test Platform Installer'
