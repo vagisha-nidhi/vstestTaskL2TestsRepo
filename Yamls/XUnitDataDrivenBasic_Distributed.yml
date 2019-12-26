@@ -22,6 +22,4 @@ jobs:
       testAssemblyVer2: '**/*XUnitDataDrivenTestsProject*.dll'
       searchFolder: '$(System.DefaultWorkingDirectory)\XunitDataDrivenTestsProject\bin\Debug\net472'
       batchingBasedOnAgentsOption: 'customBatchSize'
-      failOnMinTestsNotRun: 'true'
-      minimumExpectedTests: '5'
       vsTestVersion: 'toolsInstaller'
