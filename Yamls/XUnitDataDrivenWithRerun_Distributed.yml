@@ -21,8 +21,8 @@ jobs:
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
-      testAssemblyVer2: '**/*vsTestTaskL2ForRerun*.dll'
-      searchFolder: '$(System.DefaultWorkingDirectory)\MsTestProject\bin\Debug\net472'
+      testAssemblyVer2: '**/*XUnitDataDrivenTestsProjectFailingTests.dll'
+      searchFolder: '$(System.DefaultWorkingDirectory)\XUnitDataDrivenTestsProjectFailingTests\bin\Debug\net472'
       batchingBasedOnAgentsOption: 'customBatchSize'
       vsTestVersion: 'toolsInstaller'
       rerunFailedTests: true
