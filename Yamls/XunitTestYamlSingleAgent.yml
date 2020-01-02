@@ -21,7 +21,7 @@ jobs:
     inputs:
       testSelector: 'testAssemblies'
       testAssemblyVer2: '**/*XUnitDataDrivenTestsProjectFailingTests.dll'
-      searchFolder: '$(System.DefaultWorkingDirectory)\XUnitDataDrivenTestsProjectFailingTests\bin\Debug\net472'
+      searchFolder: 'E:\agent\_work\22\s\XUnitDataDrivenTestsProjectFailingTests\bin\Debug\net472\'
       vsTestVersion: 'toolsInstaller'
       rerunFailedTests: true
       rerunMaxAttempts: '3'
