@@ -20,8 +20,8 @@ jobs:
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
-      testAssemblyVer2: '**/*XUnitDataDrivenTestsProjectFailingTests.dll'
-      searchFolder: '$(System.DefaultWorkingDirectory)\XUnitDataDrivenTestsProjectFailingTests\bin\Debug\net472'
+      testAssemblyVer2: '**/*XUnitTestProject10.dll'
+      searchFolder: 'C:\Users\vanidhi\source\repos\XUnitTestProject10\XUnitTestProject10\bin\Debug\netcoreapp3.1'
       vsTestVersion: 'toolsInstaller'
       rerunFailedTests: true
       rerunMaxAttempts: '3'
