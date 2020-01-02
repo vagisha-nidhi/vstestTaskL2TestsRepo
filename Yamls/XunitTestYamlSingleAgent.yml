@@ -23,6 +23,3 @@ jobs:
       testAssemblyVer2: '**/*XUnitTestProject10.dll'
       searchFolder: 'C:\Users\vanidhi\source\repos\XUnitTestProject10\XUnitTestProject10\bin\Debug\netcoreapp3.1'
       vsTestVersion: 'toolsInstaller'
-      rerunFailedTests: true
-      rerunMaxAttempts: '3'
-      rerunFailedThreshold: '100'
