@@ -20,6 +20,6 @@ jobs:
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
-      testAssemblyVer2: '**/*XUnitTestProject*.dll'
+      testAssemblyVer2: '**/bin/**/*XUnitTestProject*.dll'
       searchFolder: 'C:\Users\vanidhi\source\repos\XUnitTestProject10'
       vsTestVersion: 'toolsInstaller'
