@@ -23,8 +23,5 @@ jobs:
       searchFolder: '$(System.DefaultWorkingDirectory)\XUnitDataDrivenTestsProjectFailingTests\bin\Debug\net472'
       batchingBasedOnAgentsOption: 'customBatchSize'
       vsTestVersion: 'toolsInstaller'
-      rerunFailedTests: true
-      rerunMaxAttempts: '3'
-      rerunFailedThreshold: '100'
 
 
