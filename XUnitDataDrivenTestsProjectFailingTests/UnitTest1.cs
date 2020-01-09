@@ -22,7 +22,7 @@ namespace XUnitDataDrivenTestsProject
         [InlineData(2)]
         public void Test2(int data)
         {
-            Assert.True(counter == 0);
+            Assert.True(counter == 1);
         }
     }
 }
