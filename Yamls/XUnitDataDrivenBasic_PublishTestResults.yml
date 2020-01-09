@@ -12,13 +12,8 @@ jobs:
   displayName: 'Run Tests'
   pool: Default
   steps:
-  - task: VisualStudioTestPlatformInstaller@1
-    displayName: 'Visual Studio Test Platform Installer'
+  - task: PublishTestResults@2
     inputs:
-      versionSelector: 'latestPreRelease'
-  - task: VSTest@2
-    inputs:
-      testSelector: 'testAssemblies'
-      testAssemblyVer2: '**/*XUnitDataDrivenTestsProject*.dll'
-      searchFolder: '$(System.DefaultWorkingDirectory)\XunitDataDrivenTestsProject\bin\Debug\net472'
-      vsTestVersion: 'toolsInstaller'
+      testResultsFormat: 'VSTest' # Options: JUnit, NUnit, VSTest, xUnit, cTest
+      testResultsFiles: '**/xunitdatadriven*.trx' 
+      searchFolder: '$(System.DefaultWorkingDirectory)/TrxFiles' # Optional
